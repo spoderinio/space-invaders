@@ -41,9 +41,8 @@ num_of_enemies = 6
 
 for i in range(num_of_enemies):
 
-    enemy_img[i] = (pygame.image.load("data/img/enemy.png"))
-    enemy_img[i] = pygame.transform.scale(bg, (50, 50))
-    enemy_img.append(enemy_img[i])
+    enemy = (pygame.image.load("data/img/enemy.png"))
+    enemy_img.append(enemy)
     enemy_x.append(random.randint(0, 735))
     enemy_y.append(random.randint(30, 120))
     enemy_x_change.append(GAME_SPEED)
